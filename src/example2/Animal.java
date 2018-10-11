@@ -29,7 +29,7 @@ public abstract class Animal {
      */
     public void speak(String message) {
         // should check for null first: if(message == null || message.length() == 0)
-        if(message.length() == 0) {  
+        if(message == null || message.length() == 0) {
             message = "[mute]";
         }
          JOptionPane.showMessageDialog(null, message);
